@@ -1,0 +1,554 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul{list-style-type: none;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+body{
+	background:#d6d6d6;
+	font-family: Tahoma, Arial;
+	color:#333;
+	font-size:12px;
+	background: url(images/tegel2.jpg) repeat-x;
+	margin:0 auto;
+	text-align:center;
+}
+body a{
+	color:#08c;
+}
+.container {  
+	width: 960px;  
+	margin: 0 auto;    
+	text-align:left;
+}  
+
+	#header{
+		height:60px;
+		width: 960px;
+		margin-bottom:10px;
+	}
+		.letters{
+			width:960px;
+			height:20px;
+			float:left;
+			margin-bottom:7px;
+		}
+			.letters ul{
+				float:left;
+			}
+			
+			.letters ul li{
+				float:left;
+				list-style-type:none;
+				font-size:14px;
+				margin:0px 2px;
+				line-height:19px;
+				width:24px;
+			}
+				.letters ul li a{
+					font-weight:bold;
+					color:#000;
+					text-decoration:none;
+					display:block;
+					padding:0px 6px;
+					height:20px;
+					background:yellow;
+					border:1px solid #000;
+				}
+				.letters ul li:first-child{
+					font-size:12px;
+					line-height:19px;
+				}
+				.letters ul li:last-child{
+					font-size:16px;
+					line-height:17px;
+				}
+				
+		.content{
+			width: 960px;
+			margin-bottom:15px;
+		}
+		
+		.succesBox {
+			
+			overflow: hidden;			
+			width: 920px;
+			margin-bottom:10px;
+			color: #fff;
+			border: 1px solid #D6E9C6;
+			padding: 15px 20px 8px 14px;
+			background-color: #0cd905;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		.succesBox_login{
+			height: 20px;
+			overflow: hidden;			
+			width: 500px;
+			margin-bottom:10px;
+			color: #fff;
+			border: 1px solid #D6E9C6;
+			padding: 15px 20px 8px 14px;
+			background-color: #0cd905;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		.errorBox {
+			overflow: hidden;			
+			width: 920px;
+			margin-bottom:10px;
+			color: #fff;
+			border: 1px solid #D6E9C6;
+			padding: 1px 20px 8px 14px;
+			background-color: red;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		/* Error box voor validatie email */
+		span.error {
+			
+			margin: 10px 0 0 0;
+			color: #fff;
+			border: 1px solid #f73c2f;
+			padding: 8px;
+			background-color: #ff6e64;
+		}		
+		
+			#menu {
+				margin-left:200px
+				
+			}
+
+				#menu li{
+					float:left;
+					margin-left:65px;
+					height:20px;
+					margin-top:20px;
+					
+				}
+
+					#menu li a{
+						font-size: 14px;
+						text-decoration:none;
+						color:#efefef;
+				
+					}
+					
+					#menu li a:hover{
+						text-decoration:underline;
+						color:#FFF;
+					}
+			#tagline { 
+				float:left;
+				color:white;
+				display:block;
+				font-weight: bold;
+				margin-top:20px;
+				margin-left:14px;
+				font-size: 15px;
+			}
+			#tagline a { 
+				color:white;
+				text-decoration: none;
+			}			
+			
+			.content p{
+				line-height:18px;
+				
+				color:#000;
+			}
+			
+			content h1,h2,h3,h4,h5{
+				margin-bottom:10px;
+			}
+			
+
+
+/************************ popup ************************/
+		
+.popup{
+	width:500px; 
+	height:300px; 
+	background:#FFF; 
+	display:none; 
+	position:fixed; 
+	top:0px; 
+	left:0px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	 border:1px solid #000;
+	-moz-box-shadow:  5px 5px 8px #000;
+	-webkit-box-shadow:  5px 5px 8px #000;
+	box-shadow: 5px 5px 8px #000;
+	z-index:5;
+}
+	.popupDel{
+		position:absolute;
+		top:10px;
+		right:-15px;
+		width:50px;
+		height:50px;
+		cursor:pointer;
+		background: red;	
+	}
+	
+	.popupTxt{
+		width:490px;
+		margin:20px 5px 10px 5px;
+		overflow:hidden;
+		text-align:left;
+	}
+	
+	.confirmDelete{
+		width:129px;
+		height:40px;
+		background: green;
+	}
+	
+	.popupClose{
+		width:129px;
+		height:40px;
+		background: red;
+	}
+
+.bg{
+	height:100%;
+	width:100%;
+	z-index:4;
+	background:#000;
+	opacity:0;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+}
+			
+/************************ LOGIN ************************/
+
+.clear{clear:both;}
+
+.login_box{
+	background:white;
+	padding:10px;
+	margin-left:190px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width:550px;
+	margin-top:60px;
+	box-shadow: 3px 4px 4px #888;
+}
+.login_box a{
+	color:#08c;
+}
+.error_container{
+	color:red;
+	line-height:17px;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+	width:96%;
+	padding:10px;	
+}
+
+.form_container h1{
+	color:#22a7d3;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+.grey_line{
+	border-bottom:1px solid #efefef;
+	width:100%;
+	margin-bottom:10px;
+}
+
+form#login label {
+	float:left;
+	display:block;
+	color:#000;
+	height:25px;
+	font-size:14px;
+	margin-right:20px;
+	width:59%;
+	margin-bottom:10px;
+}
+form#login input.txt {
+	border:1px solid #858585;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height:25px;
+	float:left;
+	width:36%;
+	padding:5px;
+	margin-bottom:10px;
+}
+form#login input[type=checkbox] {
+	float:left;
+	margin-bottom:10px;
+}
+
+/*form#login input.submit {
+	background:url(images/inloggen_submit.png);
+	width:131px;
+	height:39px;
+	border:none;
+	float:right;
+	padding:0px;
+	color:#FFF;
+	font-weight:bold;
+	display:block;
+}*/
+
+
+
+/*form#login #forgot_password{
+	background:url(images/inloggen_wachtwoord_vergeten.png);
+	width:196px;
+	height:28px;
+	float:left;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	padding-top:12px;
+}*/
+
+form#login input[type=text]:hover {
+	background:#e8e5e5;
+}
+form#login input[type=password]:hover {
+	background:#e8e5e5;
+}
+
+.password_forget_box{
+	display:none;
+	padding-bottom:30px;
+}
+
+.password_forget_box h1{
+	color:#22a7d3;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+.logout{
+	float:right;
+	margin-top:19px;
+	display:block;
+}
+.logout a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+				
+.password_error{
+	display:none;
+	background:red;
+	padding:5px;
+	color:white;
+	font-weight:none;
+	height:10px;
+	line-height:20px;
+	margin-top:5px;
+}
+.password_error_same{
+	display:none;
+	background:red;
+	padding:5px;
+	color:white;
+	font-weight:none;
+	height:10px;
+	line-height:20px;
+	margin-top:5px;
+}
+
+.input_error{
+	color:red!important;
+	border:1px solid #ff0000!important;
+	
+}
+.input_succes{
+	color:green!important;
+	border:1px solid green!important;
+}
+				
+/********************* ACTIVITEITEN *****************/
+
+.progressbar_container{   float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    width: 200px;}
+.percentage{float:right; display:block; font-size:13px; color:#000; margin-right:10px; font-weight:bold; margin-top:15px;}
+
+#columnLeft{
+	width:230px;
+	float:left;
+}
+
+#columnRight{
+	width:710px;
+	margin-left:16px;
+	float:left;
+	
+}
+
+
+
+
+/*****BUTTONS*****/
+
+.backButton{
+	background:url(images/blueBackSmall.png);
+	width:102px;
+	height:26px;
+	cursor:pointer;
+	float:left;
+	display:block;
+	color:#FFF!important;
+	line-height:23px;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:none;
+	margin-top:3px;
+}
+	.backButton:hover{
+		background-position:0px -27px;
+	}
+
+.button{
+	color:#FFF !important;
+	line-height:27px;
+	text-align:center;
+	text-decoration:none;
+	border:0px;
+	font-weight:bold;
+	cursor:pointer;
+	float:right;
+	margin:3px;
+}
+	.left{
+		float:left;
+	}
+	.blueSmall{
+		width:102px;
+		height:26px;
+		background:url(images/blueSmall.png) no-repeat top left;
+	}
+	.blueMedium{
+		width:130px;
+		height:26px;
+		background:url(images/blueMedium.png) no-repeat top left;
+	}
+	.blueBig{
+		width:150px;
+		height:26px;
+		background:url(images/blueBig.png) no-repeat top left;
+	}
+		.blueSmall:hover, .blueBig:hover, .blueMedium:hover{
+			background-position:0px -27px;
+		}
+	
+	.greenSmall{
+		width:102px;
+		height:26px;
+		background:url(images/greenSmall.png) no-repeat top left;
+	}
+	.greenMedium{
+		width:130px;
+		height:26px;
+		background:url(images/greenMedium.png) no-repeat top left;
+	}
+	.greenBig{
+		width:150px;
+		height:26px;
+		background:url(images/greenBig.png) no-repeat top left;
+	}
+			.greenSmall:hover, .greenBig:hover, .greenMedium:hover{
+				background-position:0px -27px;
+			}
+	
+	.redSmall{
+		width:102px;
+		height:26px;
+		background:url(images/redSmall.png) no-repeat top left;
+	}
+	.redMedium{
+		width:130px;
+		height:26px;
+		background:url(images/redMedium.png) no-repeat top left;
+	}
+	.redBig{
+		width:150px;
+		height:26px;
+		background:url(images/redBig.png) no-repeat top left;
+	}
+			.redSmall:hover, .redBig:hover, .redMedium:hover{
+				background-position:0px -27px;
+			}
+			
+	.shoutboxButton{
+		margin-top:5px;
+	}
+	
+	
+	
+	.ownImage{
+		margin-left:10px;
+	}
+	
+	
+	
+	
+	#reply{
+		width: 207px;
+		height: 75px;
+		color:#333;
+		font-family:tahoma, arial;
+		font-size:12px;
+	}
+	
+	.keep_login{
+		width:13px !important;
+		float:left;
+	}
+	
+	.loginTxt{
+		float:left !important;
+		line-height:22px;
+		width: 100px !important;
+		font-size: 12px !important;
+		margin-left: 5px;
+	}

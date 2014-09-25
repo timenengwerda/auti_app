@@ -1,0 +1,1214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul{list-style-type: none;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	background:#d6d6d6;
+	font-family: Tahoma, Arial;
+	color:#333;
+	font-size:13px;
+	background: url(images/tegel2.jpg) repeat-x;
+}
+
+.container {  
+	width: 960px;  
+	margin: 0 auto;    
+}  
+
+	#header{
+		height:60px;
+		width: 960px;
+		margin-bottom:10px;
+	}
+
+		.content{
+			width: 960px;
+			overflow:hidden;
+		}
+		
+		.succesBox {
+			height: 20px;
+			overflow: hidden;			
+			width: 920px;
+			margin-bottom:10px;
+			color: #fff;
+			border: 1px solid #D6E9C6;
+			padding: 15px 20px 8px 14px;
+			background-color: #0cd905;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		.succesBox_login{
+			height: 20px;
+			overflow: hidden;			
+			width: 500px;
+			margin-bottom:10px;
+			color: #fff;
+			border: 1px solid #D6E9C6;
+			padding: 15px 20px 8px 14px;
+			background-color: #0cd905;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		.errorBox {
+			overflow: hidden;			
+			width: 920px;
+			margin-bottom:10px;
+			color: #fff;
+			border: 1px solid #D6E9C6;
+			padding: 1px 20px 8px 14px;
+			background-color: red;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		
+			#menu {
+				margin-left:200px
+				
+			}
+
+				#menu li{
+					float:left;
+					margin-left:65px;
+					height:20px;
+					margin-top:20px;
+					
+				}
+
+					#menu li a{
+						font-size: 14px;
+						text-decoration:none;
+						color:#efefef;
+				
+					}
+					
+					#menu li a:hover{
+						text-decoration:underline;
+						color:#FFF;
+					}
+			#tagline { 
+				float:left;
+				color:white;
+				display:block;
+				font-weight: bold;
+				margin-top:20px;
+				margin-left:14px;
+				font-size: 15px;
+			}
+			#tagline a { 
+				color:white;
+				text-decoration: none;
+			}			
+			
+			.content p{
+				line-height:18px;
+				font-size:12px;
+				color:#000;
+			}
+			
+			content h1,h2,h3,h4,h5{
+				margin-bottom:10px;
+			}
+			
+
+/************************* dashboard *******************/
+.box{
+	background:#ffffff;
+	float:left;
+	height:auto;
+	min-height:200px;
+	padding:20px;
+	margin-right:10px;
+	border-radius: 5px;
+
+	margin-bottom:10px;
+	box-shadow: 3px 4px 4px #888;
+
+
+}
+.box h2{
+	font-size:20px;
+	color:#08c;
+}
+.toevoegen {
+	width:200px;
+	
+}
+.activiteit {
+	width:400px;
+}
+
+.food {
+	width: 10px;
+	height:10px;
+	display: block;
+	margin-top: 10px;
+	float:left;
+
+}
+
+.statistieken {
+	width:210px;
+	margin-right:0px;
+}
+
+.shoutbox  {
+	width:400px;
+	float:left;
+}
+	
+.live {
+	width:210px;
+	float:right;
+	margin-right:10px;
+}
+
+
+#quickadd input[type=text]{
+	padding-bottom:10px;
+ 	width:128px;
+	display:block;
+	border: 1px solid #999;
+	height: 25px;
+	float:left;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding:5px;
+	color:#333;
+}
+
+#quickadd .time_indicator{
+	margin: 3px 3px 0px 3px !important;
+}
+
+	#quickadd textarea{
+		font-family: tahoma, arial;
+		width:127px;
+		color:#333;
+		height:100px;
+		margin-bottom:7px;
+	}
+	
+	#quickadd .pictogramContainer{
+		width:210px;
+		float:left;
+		
+	}
+		#quickadd .pictogramContainer img{
+			width:40px;
+		}
+		#quickadd .pictogramContainer .defaultPictoRadio{
+			display:none;
+		}
+		#quickadd .pictogramContainer .pictogramSelection{
+			float:left;
+			padding-bottom:2px;
+			width:50px;
+			overflow:hidden;
+			text-align:center;
+			font-size:10px;
+			cursor:pointer;
+		}
+.buttontoevoegen{
+	margin-top:10px;
+	float: right;
+	width:91px;
+	height:30px;
+	display: block;
+	background: url(images/toevoegen.jpg) no-repeat;
+	border:0px;
+}
+	
+#quickadd label{
+	float:left;
+	margin-right: 0px;
+	width: 70px;
+
+}
+
+#stats{
+	font-size: 14px;
+	display: block;
+	overflow: auto;
+	float: left;
+	margin-right: 0px;
+	width: 160px;
+	margin-top: 10px;
+	color: #000000;
+	line-height:19px;
+}
+
+.stat{
+	font-size: 12px;
+	display: block;
+	color:#0099cc;
+	margin-top:5px;
+	margin-right:0px;
+}
+
+.sbox{
+	font-size: 12px;
+	display: block;
+	color:#0099cc;
+	margin-top: 20px;
+	margin-right:70px;
+	float:left;
+}
+
+#shout label {
+	margin-top: 7px;
+	font-size: 10px;
+	float: left;
+	color: #000000;
+	margin-right:210px;
+}
+
+
+.nieuw {
+	font-size: 15px;
+	float: up;
+	color: #0099cc;
+	margin-right: 0px;
+	margin-left: 10px;
+}
+
+#shout textarea {
+	display: block;
+	float: right;
+	width: 130px;
+	height:100px;
+	border-radius: 4px;
+	margin-top: -96px;
+	margin-left: 90px;
+}
+
+.calendar {
+	margin-top:20px;
+	float: right;
+	width:400px;
+	height:150px;
+	display: block;
+	background: url(images/calendar.png) no-repeat;
+}
+
+.livep {
+	margin-top:20px;
+	float: right;
+	width:220px;
+	height:150px;
+	display: block;
+	background: url(images/live.png) no-repeat;
+}
+
+.buttonplaats {
+	margin-top:20px;
+	float: right;
+	margin-left: 270px;
+	width:100px;
+	height:22px;
+	display: block;
+	background: url(images/place.png) no-repeat;
+}
+			
+
+
+
+
+
+
+/************************ SHOUTBOX ***********************/
+			.shoutboxLeft, .shoutboxRight{
+				float:left;
+				overflow:hidden;
+			}
+			.shoutboxLeft{
+				width:230px;
+			}
+				.shoutboxLeft .shout{
+					width:230px;
+					overflow:hidden;
+					padding:5px 0px;
+					border-bottom:1px solid #ccc;
+				}
+					.shout .shoutInfo, .shout .shoutContent{
+						width:230px;
+						overflow:hidden;
+						float:left;
+					}
+				.shoutboxLeft p{
+					margin-top: 5px;
+					float: left;
+					color: #333;
+				}
+			.shoutboxRight{
+				width:148px;
+				margin-left:10px;
+				border:1px solid #ccc;
+				border-radius:5px;
+				padding:5px;
+			}
+				.shoutboxRight h3{
+					color: #09C;
+					font-size:14px;
+					margin-bottom: 3px;
+				}
+				.shoutboxRight textarea{
+					width:148px;
+					height:100px;
+					font-family:tahoma, arial;
+					color:#333;
+					border:1px solid #ccc;
+					border-radius:5px;
+					
+				}
+				.shoutboxRight .submitShout{
+					border:0px;
+					background: url(/public/stylesheet/images/place.png) no-repeat;
+					width: 100px;
+					height: 22px;
+					float:right;
+					cursor:pointer;
+					margin-top:5px;
+				}
+				
+				.shoutInfo .name, .shoutInfo .date{
+					float:left;
+					color:#08c;
+				}
+					.shoutInfo .date{
+						float:right;
+						font-size:11px;
+						margin-top:3px;
+					}
+				
+			
+
+
+
+
+
+/************************ popup ************************/
+		
+.popup{
+	width:500px; 
+	height:300px; 
+	background:#FFF; 
+	display:none; 
+	position:fixed; 
+	top:0px; 
+	left:0px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	 border:1px solid #000;
+	-moz-box-shadow:  5px 5px 8px #000;
+	-webkit-box-shadow:  5px 5px 8px #000;
+	box-shadow: 5px 5px 8px #000;
+	z-index:5;
+}
+	.popupDel{
+		position:absolute;
+		top:10px;
+		right:-15px;
+		width:50px;
+		height:50px;
+		cursor:pointer;
+		background: red;
+		
+	}
+	
+	.popupTxt{
+		width:490px;
+		margin:20px 5px 10px 5px;
+		overflow:hidden;
+		text-align:left;
+	}
+	
+	.confirmDelete{
+		width:129px;
+		height:40px;
+		background: green;
+	}
+	
+	.popupClose{
+		width:129px;
+		height:40px;
+		background: red;
+	}
+
+.bg{
+	height:100%;
+	width:100%;
+	z-index:4;
+	background:#000;
+	opacity:0;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+}
+			
+
+
+/************************ LOGIN ************************/
+
+.clear{clear:both;}
+
+.login_box{
+	background:white;
+	padding:10px;
+	margin:0 auto;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width:550px;
+	margin-top:60px;
+	box-shadow: 3px 4px 4px #888;
+}
+.login_box a{
+	color:#08c;
+}
+.error_container{
+	color:red;
+	line-height:17px;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+	width:96%;
+	padding:10px;	
+}
+
+.form_container h1{
+	color:#22a7d3;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+.grey_line{
+	border-bottom:1px solid #efefef;
+	width:100%;
+	margin-bottom:10px;
+}
+
+form#login label {
+	float:left;
+	display:block;
+	color:#000;
+	height:25px;
+	font-size:14px;
+	margin-right:20px;
+	width:59%;
+	margin-bottom:10px;
+}
+form#login input {
+	border:1px solid #858585;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height:25px;
+	float:left;
+	width:36%;
+	padding:5px;
+	margin-bottom:10px;
+}
+form#login input[type=checkbox] {
+	float:left;
+	margin-bottom:10px;
+}
+
+form#login input[type=submit] {
+	background:url(images/inloggen_submit.png);
+	width:131px;
+	height:39px;
+	border:none;
+	float:right;
+	padding:0px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+}
+
+form#login input[type=submit]:hover{
+	background:url(images/inloggen_submit_hover.png);
+}
+
+form#login #forgot_password{
+	background:url(images/inloggen_wachtwoord_vergeten.png);
+	width:196px;
+	height:28px;
+	float:left;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	padding-top:12px;
+}
+
+form#login input[type=text]:hover {
+	background:#e8e5e5;
+}
+form#login input[type=password]:hover {
+	background:#e8e5e5;
+}
+
+.password_forget_box{
+	display:none;
+}
+
+.password_forget_box h1{
+	color:#22a7d3;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+
+.logout{
+	float:right;
+	margin-top:19px;
+	display:block;
+}
+.logout a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+/***********************SETTINGS************************/
+
+#settingsForm{
+	width:500px;
+}
+
+	#settingsForm p{
+		width:500px;
+		float:left;
+	}
+	#settingsForm label{
+		display:block;
+		width:100px;
+		height:20px;
+		float:left;
+	}
+	
+	#settingsForm input, #settingsForm span{
+		float:left;
+	}
+
+
+
+/********************* REGISTRATIE **************/
+.colourblock{
+	border:1px solid #000; 
+	width:20px; 
+	height:20px;
+}
+.setupBlock{
+	width:720px;
+	background:#FFF;
+	box-shadow: 3px 4px 4px #888;
+	height:550px;
+	margin:0 auto;
+	border-radius: 5px;
+	margin-bottom:20px;
+}
+	.setupBlock .top{
+		width:720px;
+		height:50px;
+	}
+		.setupBlock .top h1, .setupBlock .top h2{
+			font-family: tahoma, arial;
+			font-size:26px;
+			color:#0088cc;
+			float:left;
+			height:60px;
+			line-height:60px;
+			margin-left:10px;
+		}
+			.setupBlock .top h2{
+				font-size:20px !important;
+				color:#666 !important;
+				line-height:62px !important;
+				margin-left:5px;
+			}
+		
+		.setupBlock .top .progress{
+			float:right;
+			height:60px;
+			width:300px;
+			position:relative;
+		}
+			.top .progress img{
+				position:absolute;
+				top:18px;
+				left:70px;
+			}
+			
+		.stepsMenu{
+			height:72px;
+			width:720px;
+			float:left;
+		}
+			.stepsMenu ul li{
+				width:180px;
+				
+				background: url(images/setupMenuBG.png) 0 0px repeat-x;
+				float:left;
+
+			}
+				.stepsMenu ul li{
+					display:block;
+					height:59px;
+					width:179px;
+					text-align:center;
+					color:#333;
+					font-size:15px;
+					text-decoration:none;
+					font-weight:bold;
+					line-height:20px;
+					padding-top:13px;
+					border-right:1px solid #888;
+		
+					
+				}
+					.stepsMenu ul li:last-child{
+						border:0px;
+						width:180px;
+						list-style-type: none;
+					}
+				
+				.stepsMenu ul li.active{
+					background: url(images/setupMenuBG.png) 0 -72px repeat-x;
+					color:#FFF;
+					list-style-type: none;
+				}
+
+		.setupBlock .content{
+			width:680px;
+			height:380px;
+			padding:20px;
+			overflow:hidden;
+			position:relative;
+		}
+			.setupBlock .content form{
+				width:450px;
+			}
+				.setupBlock .content h3{
+					color:#333;
+					font-size:16px;
+					font-weight:bold;
+					font-family:tahoma, arial;
+					margin-top:15px;
+					margin-bottom:5px;
+				}
+				.setupBlock .content p{
+					margin:10px 0px;
+				}
+
+				.setupBlock .content form p{
+					width:700px;
+					float:left;
+					margin:0px;
+					line-height:40px;
+				}
+					.setupBlock .content form p label{
+						float:left;
+						width:200px;
+						font-size:15px;
+						text-align:right;
+						color:#333;
+						font-weight:bold;
+						display:block;
+						height:27px;
+						margin-top:10px;
+						line-height:25px;
+						margin-right:10px;
+					}
+					.setupBlock .content form p input[type=text], .setupBlock .content form p input[type=password]{
+						width:177px;
+						margin-left:5px;
+						padding:5px;
+						height:30px;
+						font-size:13px;
+						float:left;
+						border-radius:5px;
+						border:1px solid #a3a3a3;
+						color:#333;
+						margin-top:10px;
+						margin-right:10px;
+					}
+					
+						.setupBlock .content form p input[type=submit]{
+							width:134px;
+							height:41px;
+							background: url(images/nextStep.png) no-repeat;
+							border:0px;
+							position:absolute;
+							right:25px;
+							bottom:25px;
+							cursor:pointer;
+						}
+						
+			.setupBlock .content table td{
+				padding:5px 4px;
+			}
+			.setupBlock .content table td strong{
+				font-size:14px;
+				font-weight:bold;
+			}
+			
+				.activationComplete{
+					font-size:16px;
+					font-weight:bold;
+				}
+				.apiKey{
+					font-size:85px;
+					text-align:center;
+					width:700px;
+					font-family:tahoma, arial;
+					letter-spacing:10px;
+					margin-top:75px;
+				}
+				
+.password_error{
+	display:none;
+	background:red;
+	padding:10px;
+	color:white;
+	font-size:12px;
+	font-weight:none;
+	width:30%;
+	height:10px;
+}
+.password_error_same{
+	display:none;
+	background:red;
+	padding:10px;
+	color:white;
+	font-size:12px;
+	font-weight:none;
+	width:30%;
+	height:10px;
+}
+
+.input_error{
+	color:red!important;
+	border:1px solid #ff0000!important;
+	
+}
+.input_succes{
+	color:green!important;
+	border:1px solid green!important;
+}
+				
+/********************* ACTIVITEITEN *****************/
+
+.progressbar_container{float:right; width:300px; margin-top:10px; margin-left:10px; margin-right:10px;}
+.percentage{float:right; display:block; font-size:13px; color:#000; margin-right:10px; font-weight:bold; margin-top:15px;}
+
+#columnLeft{
+	width:230px;
+	float:left;
+}
+	#columnLeft .blockLeft{
+		background:#FFF;
+		border-radius: 5px;
+		width:230px;
+		overflow:hidden;
+		margin-bottom:15px;
+		box-shadow: 3px 4px 4px #888;
+	}
+		#columnLeft .blockLeft .userAvatar{
+			width:55px;
+			float:left;
+			height:auto;
+			padding:10px;
+		}
+			.blockLeft .userAvatar .avatar{
+				width:50px;
+				height:50px;
+				border-radius:5px;
+				overflow:hidden;
+			}
+		#columnLeft .blockLeft .userInfo{
+			width:115px;
+			float:left;
+			padding-top:17px;
+		}
+			.userInfo h3{
+				font-size:16px;
+				font-family:tahoma, arial;
+				color:#333;
+			}
+			.userInfo p{
+				margin-top:6px;
+			}
+				.userInfo a{
+					font-family:tahoma, arial;
+					font-size:12px;
+					color:#0088cc;
+					text-decoration:none;
+				}
+				.userInfo a:hover{
+					text-decoration:underline;
+				}
+				
+		.blockLeft .subMenu{
+			width:230px;
+			list-style-type:none;
+		}
+			.subMenu li{
+				height:28px;
+				border-bottom:1px solid #CCC;
+				width:230px;
+				line-height:28px;
+				
+			}
+				.subMenu li a{
+					font-family: tahoma, arial;
+					font-size:14px;
+					color:#0088cc;
+					font-weight:bold;
+					text-decoration:none;
+					margin-left:10px;
+					display:block;
+					width:208px;
+					background: url(images/arrowInactive.png) no-repeat center right;
+				}
+				.subMenu li:hover a{
+					color:#888 !important;
+				}
+				.subMenu li.active a, .subMenu li:hover a{
+					color:#333;
+					background: url(images/arrowActive.png) no-repeat center right;
+				}
+#columnRight{
+	width:710px;
+	margin-left:20px;
+	float:left;
+	overflow:hidden;
+}
+
+#columnActivities{
+	width:960px;
+	margin-left:0px;
+	float:left;
+	background:#FFF;
+	border-radius: 5px;
+
+}
+	#columnRight .activitiesAdd{
+		background:#FFF;
+		border-radius: 5px;
+		width:960px;
+		overflow:hidden;
+		margin-bottom:15px;
+		box-shadow: 3px 4px 4px #888;
+	}
+		.activitiesAdd .title{
+			width:960px;
+			height:50px;
+			border-bottom:1px solid #CCC;
+		}
+		
+			
+			.activitiesAdd .title h1, #columnRight .title h2{
+				font-family: tahoma, arial;
+				font-size:26px;
+				color:#0088cc;
+				float:left;
+				height:50px;
+				line-height:50px;
+				margin-left:10px;
+			}
+			.activitiesAdd .title h2{
+				font-size:20px !important;
+				color:#666 !important;
+				line-height:52px !important;
+				margin-left:5px;
+				float:left;
+			}
+			
+		.activitiesAdd .activitiesAddContent{
+			width:960px;
+			overflow:hidden;
+		}
+			.activitiesAddContent .formColumnLeft, .activitiesAddContent .formColumnRight{
+				width:335px;
+				padding:10px;
+				float:left;
+			}
+				.activitiesAddContent #addActivity label, .formColumnRight label{
+					font-family:tahoma, arial;
+					line-height:29px;
+					height:25px;
+					display:block;
+					width:100px;
+					float:left;
+					font-size:15px;
+					color:#333;
+					margin-top:9px;
+				}
+				.activitiesAddContent #addActivity textarea{
+					font-family: tahoma, arial;
+				}
+				#addActivity h3{
+					font-weight:bold;
+					color:#08C;
+					font-size:13px;
+					margin-bottom:10px;
+				}
+				
+				.activitiesAddContent #addActivity input[type=text], .activitiesAddContent textarea.how{
+					width:225px;
+					margin-left:5px;
+					padding:5px;
+					height:25px;
+					float:left;
+					border-radius:5px;
+					border:1px solid #a3a3a3;
+					margin-top:9px;
+					color:#333;
+				}
+				.activitiesAddContent #addActivity input[type=checkbox]{
+					width:30px;
+					color:#333;
+				}
+				
+				.checkboxContainer{
+					width:200px;
+					margin-left:5px;
+					padding:5px;
+					height:25px;
+					float:left;
+					border-radius:5px;
+					border:1px solid #a3a3a3;
+					margin-top:9px;
+					color:#333;
+					line-height:15px;
+				}
+				.activitiesAddContent #addActivity input[type=file]{
+					width:177px;
+					margin-left:5px;
+					padding:5px;
+					height:25px;
+					float:left;
+					margin-top:9px;
+				}
+					.activitiesAddContent #addActivity textarea.how{
+						height:45px;
+					}
+			.activitiesAddContent .formColumnRight{
+				float:right;
+				margin-left:10px;
+			}
+			
+			#addActivity .pictogramContainer{
+					border: 1px solid #EFEFEF;
+					float: left;
+					height: 115px;
+					margin-left: 10px;
+					margin-right: 10px;
+					overflow: auto;
+					padding: 10px;
+					width: 430px;
+				}
+			#addActivity .pictogramContainer h3{
+				margin:0px;
+				font-size:12px;
+			}
+				
+			.formColumnRight .uploadCustomButton{
+					background:url(images/inloggen_wachtwoord_vergeten.png);
+					width:196px;
+					height:28px;
+					padding-top:10px;
+					float:left;
+					margin-top: 55px;
+					color:#FFF;
+					font-size:12px;
+					font-weight:bold;
+					text-align:center;
+					text-decoration:none;
+				}
+				
+
+				
+				.formColumnRight .customPicto_upload{
+					display:none;
+					
+				}
+				
+					.pictogramContainer a{
+						float:left;
+						margin:3px;
+					}
+						.pictogramContainer a.active img{
+							border:2px solid #0088cc;
+							width:46px;
+							height:46px;
+						}
+						.pictogramContainer a img{
+							width:50px;
+							height:50px;
+						}
+						
+				.formColumnRight span{
+					font-family:tahoma, arial;
+					display:block;
+					width:335px;
+					float:left;
+					font-size:15px;
+					color:#333;
+					margin-top:9px;
+				}
+					.formColumnRight #ownPicto{
+						width:335px;
+						height:32px;
+						margin-top:6px;
+						float:left;
+					}
+						#ownPicto a{
+							float:left;
+							margin-left:5px;
+							
+						}
+							#ownPicto a:first-child{
+								margin:0px;
+							}
+					.repeatLabel{
+						width:70px !important;
+					}
+					.formColumnLeft #repeat{
+						float:left;
+						height:40px;
+						width:290px;
+						line-height:50px;
+						color:#333;
+						margin-top:50px;
+					}
+						.formColumnLeft #repeat select{
+							margin-top:13px;
+							margin-bottom:10px;
+						}
+					
+						.formColumnRight .submitActivities{
+							width:108px;
+							height:33px;
+							border:0px;
+							float:right;
+							background:url(images/toevoegen.png) no-repeat;
+							margin-top:150px;
+							cursor:pointer;
+						}
+						
+						#addActivity .formColumnRight{
+							width:400px;
+						
+						}
+						
+						form#addActivity .timeInput, #quickadd .timeInput{
+							width:35px !important;
+						}
+						form#addActivity .pictogramSelection{
+							float:left;
+							width:60px; 
+							height:60px;
+							margin:10px;
+							font-size:11px;
+							color:#000;
+						}
+						
+						form#addActivity .defaultPictogram{
+							width:50px;
+							height:50px;
+							float:left;
+							margin:5px;
+							cursor:pointer;
+							
+						}
+						form#addActivity .customPictogram{
+							width:50px;
+							height:50px;
+							float:left;
+							margin:5px;
+							cursor:pointer;
+						}
+						form#addActivity .defaultPictoRadio{
+							display:none;
+							 float: left;
+   							 line-height: 18px;
+    						margin-left: 18px;
+						}
+						form#addActivity #repeatBlock, form#addActivity #ownPicto{
+							display:none;
+						}
+						form#addActivity .time_indicator, #quickadd .time_indicator{
+							float:left;
+							margin:13px 0px 0px 4px;
+						}
+
+
+
+
+
+/************************ SETTINGS *********************/
+.user a, .data a{
+	color:#09C !important;
+}
+
+
+
+
+
+/************************ LIVE PREVIEW *********************/
+
+#iphone{background:url(images/iphone_true.png); width:250px; height:489px; float:right;}
+.iphone_wrapper{width:211px; height:319px; background:#ffffff; float:left; margin-left: 20px; margin-top: 87px;}
+#iphone .top_bar{background:url(images/top_bar_gradient.png) repeat-x; height:40px;}
+#iphone .top_bar .character{background:url(images/karakter_small.png); float:left; margin-left:10px; width:24px; height:25px; margin-top:7px;margin-right:20px;}
+
+#iphone .top_bar .date{color:#FFF; font-size:13px; margin-left: 10px; margin-top: 10px; float:left;}
+#iphone .top_bar .time{color:#FFF; font-size:12px; float:right; margin-right: 10px; margin-top: 11px;}
+#iphone .images_container .current_picto{width:100px; height:100px; background:#95c11f; display:block; padding:5px;}
+#iphone .images_container .current_picto img{ width:100px; height:100px;}
+#iphone .images_container{float:left; margin-left: 50px; margin-top: 15px;}
+#iphone .activities_wrapper{float:left; margin-top:15px;}
+#iphone .activities_wrapper .activity{background:url(images/activity_balk_small.png);width:197px; height:36px; float:left; margin-bottom:10px;margin-left: 7px;}
+#iphone .activities_wrapper .no_activity{padding:10px; width:170px; height:30px; background:#16c230; float:left; color:#FFF; margin-left:10px;}
+
+#iphone .activities_wrapper .activity .activity_icon{float: left; height: 23px; margin-left: 8px; margin-top: 7px; width: 22px; margin-right:10px;}
+
+#iphone .activities_wrapper .activity .task{background:url(images/task_small.png) no-repeat;}
+#iphone .activities_wrapper .activity .who{background:url(images/who_small.png) no-repeat;}
+#iphone .activities_wrapper .activity .activity_time{background:url(images/time_small.png)no-repeat;}
+
+#iphone .activities_wrapper .activity .activity_title{ color:#FFF; font-size:12px; margin-top:7px; margin-left:25x; float:left; width:70px;height:40px;}
+#iphone .activities_wrapper .activity .activity_text{float:left;margin-left:10px;overflow:hidden;color:#FFF;font-size:13px;margin-top:7px;}

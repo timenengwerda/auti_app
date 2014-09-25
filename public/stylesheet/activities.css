@@ -1,0 +1,441 @@
+	#calendar {
+		float: right;
+		width: 960px;
+		margin-bottom: 20px;
+	}
+	.popover {
+		position: absolute;
+		width: 275px;
+		top: -15px;
+		left: 142px;
+		background: #08c;
+		border-radius: 10px;
+		padding: 20px;
+		color: #fff;
+		z-index: 10;
+		box-shadow: 0px 5px 20px rgba(0,0,0,.5);
+		margin-bottom: 100px;
+	}
+	.popover p {
+		color: #fff;
+		line-height: 18px;
+	}
+	.popover h2 {
+		font-size: 16px;
+	}	
+	.popover:before {
+		content: "";
+		z-index: -1;
+		width: 16px;
+		height: 16px;
+		background: #08c;
+		margin-left: -10px;
+		position: absolute;
+		left: 2px;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.quickadd {
+		position: absolute;
+		width: 250px;
+		top: -15px;
+		left: 142px;
+		background: #75ff70;
+		border-radius: 10px;
+		padding: 20px;
+		color: #fff;
+		z-index: 10;
+		box-shadow: 0px 5px 20px rgba(0,0,0,.5);
+		margin-bottom: 100px;
+		
+	}
+	.quickadd p {
+		color: #fff;
+		line-height: 18px;
+	}
+	.quickadd:before {
+		content: "";
+		z-index: -1;
+		width: 16px;
+		height: 16px;
+		background: #75ff70;
+		margin-left: -10px;
+		position: absolute;
+		left: 2px;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	#columnLeft .blockLeft{
+		background:#FFF;
+		border-radius: 5px;
+		width:230px;
+		overflow:hidden;
+		margin-bottom:15px;
+		box-shadow: 3px 4px 4px #888;
+	}
+		#columnLeft .blockLeft .userAvatar{
+			width:55px;
+			float:left;
+			height:auto;
+			padding:10px;
+		}
+			.blockLeft .userAvatar .avatar{
+				width:50px;
+				height:50px;
+				border-radius:5px;
+				overflow:hidden;
+			}
+		#columnLeft .blockLeft .userInfo{
+			width:115px;
+			float:left;
+			padding-top:17px;
+		}
+			.userInfo h3{
+				font-size:16px;
+				font-family:tahoma, arial;
+				color:#333;
+			}
+			.userInfo p{
+				margin-top:6px;
+			}
+				.userInfo a{
+					font-family:tahoma, arial;
+					
+					color:#0088cc;
+					text-decoration:none;
+				}
+				.userInfo a:hover{
+					text-decoration:underline;
+				}
+				
+		.blockLeft .subMenu{
+			width:230px;
+			list-style-type:none;
+		}
+			.subMenu li{
+				height:28px;
+				border-bottom:1px solid #CCC;
+				width:230px;
+				line-height:28px;
+				
+			}
+				.subMenu li a{
+					font-family: tahoma, arial;
+					font-size:14px;
+					color:#0088cc;
+					font-weight:bold;
+					text-decoration:none;
+					margin-left:10px;
+					display:block;
+					width:208px;
+					background: url(images/arrowInactive.png) no-repeat center right;
+				}
+				.subMenu li:hover a{
+					color:#888 !important;
+				}
+				.subMenu li.active a, .subMenu li:hover a{
+					color:#333;
+					background: url(images/arrowActive.png) no-repeat center right;
+				}
+				
+				
+
+#columnActivities{
+	width:960px;
+	margin-left:0px;
+	float:left;
+	background:#FFF;
+	border-radius: 5px;
+
+}
+	#columnRight .activitiesAdd,
+	#columnRight .activitiesEdit{
+		background:#FFF;
+		border-radius: 5px;
+		overflow:hidden;
+		height:auto;
+		margin-bottom:15px;
+		box-shadow: 3px 4px 4px #888;
+		
+	}
+		.activitiesAdd .title,
+		.activitiesEdit .title{
+			width:710px;
+			height:50px;
+			border-bottom:1px solid #CCC;
+		}
+			
+			.activitiesAdd .addActivityAllForm,
+			.activitiesEdit .editActivityAllForm{
+				overflow:hidden;
+				float:left;
+				width:710px;
+				background:#fff;
+			}
+			.activitiesAdd .title h1, #columnRight .title h2,
+			.activitiesEdit .title h1, #columnRight .title h2{
+				font-family: tahoma, arial;
+				font-size:26px;
+				color:#0088cc;
+				float:left;
+				height:50px;
+				line-height:50px;
+				margin-left:10px;
+			}
+	
+			.activitiesAdd .formColumnLeft, .activitiesAddContent .formColumnRight,
+			.activitiesEdit .formColumnLeft, .activitiesAddContent .formColumnRight{
+				width:340px;
+				padding:10px;
+				float:left;
+			}
+				.formColumnLeft p{
+					width:340px;
+					float:left;
+					color:#333;
+					overflow:hidden;
+					
+				}
+				#addActivity label, .formColumnRight label,
+				#editActivity label, .formColumnRight label{
+					font-family:tahoma, arial;
+					line-height:29px;
+					height:25px;
+					display:block;
+					width:100px;
+					float:left;
+					font-size:15px;
+					color:#333;
+					margin-top:9px;
+				}
+				#addActivity textarea,
+				#editActivity textarea{
+					font-family: tahoma, arial;
+					margin-bottom:10px;
+					margin-top:10px;
+					width:220px;
+					margin-left:5px;
+					border-radius: 3px;
+					border: 1px solid #A3A3A3;
+				}
+				#addActivity h3,
+				#editActivity h3{
+					font-weight:bold;
+					color:#08C;
+					font-size:13px;
+					margin-bottom:10px;
+				}
+				
+				#addActivity input.textField, .activitiesAddContent textarea.how,
+				#editActivity input.textField, .activitiesAddContent textarea.how{
+					width:225px;
+					margin-left:5px;
+					padding:5px;
+					height:25px;
+					float:left;
+					border-radius:5px;
+					border:1px solid #a3a3a3;
+					margin-top:9px;
+					color:#333;
+					
+				}
+				#addActivity input[type=checkbox],
+				#editActivity input[type=checkbox]{
+					width:30px;
+					color:#333;
+				}
+				
+				.checkboxContainer{
+					width:200px;
+					margin-left:5px;
+					padding:5px;
+					height:25px;
+					float:left;
+					border-radius:5px;
+					border:1px solid #a3a3a3;
+					margin-top:9px;
+					color:#333;
+					line-height:15px;
+				}
+				.customPicto_upload input[type=file]{
+				    height: 25px;
+				    margin-left: 10px;
+				    margin-top: 9px;
+				    padding: 5px;
+				    width: 197px;
+				}
+					.activitiesAddContent #addActivity textarea.how,
+					.activitiesEditContent #editActivity textarea.how{
+						height:45px;
+					}
+			.activitiesAddContent .formColumnRight{
+				float:right;
+				margin-left:10px;
+			}
+			
+			#addActivity .pictogramContainer,
+			#editActivity .pictogramContainer{
+					border: 1px solid #EFEFEF;
+					float: left;
+					height: 115px;
+					margin-left: 10px;
+					margin-right: 10px;
+					overflow: auto;
+					padding: 10px;
+					width: 665px;
+				}
+			#addActivity .pictogramContainer h3,
+			#editActivity .pictogramContainer h3{
+				margin:0px;
+			}
+
+			#addActivity .OwnPictoButtons,
+			#editActivity .OwnPictoButtons{
+				width:100%;
+				float:left;
+			}
+			#customPictogramContainer{
+				display:none;
+			}
+				.customPicto_upload{
+					display:none;
+					float:left;
+					background:#dadada;
+					border:1px solid #656464;
+					padding:10px;
+					width:400px;
+				}
+				.customPicto_upload input[type=text]{
+					
+				}
+				.customPicto_upload input[type=file]{
+					
+				}
+				.close_upload{
+					
+					float:right!important;
+					margin-top:10px;
+					margin-right:1px;
+				}
+				
+					.pictogramContainer a{
+						float:left;
+						margin:3px;
+					}
+						.pictogramContainer a.active img{
+							border:2px solid #0088cc;
+							width:46px;
+							height:46px;
+						}
+						.pictogramContainer a img{
+							width:50px;
+							height:50px;
+						}
+						
+				.formColumnRight span{
+					font-family:tahoma, arial;
+					display:block;
+					width:335px;
+					float:left;
+					font-size:15px;
+					color:#333;
+					margin-top:9px;
+				}
+					.formColumnRight #ownPicto{
+						width:335px;
+						height:32px;
+						margin-top:6px;
+						float:left;
+					}
+						#ownPicto a{
+							float:left;
+							margin-left:5px;
+							
+						}
+							#ownPicto a:first-child{
+								margin:0px;
+							}
+					.repeatLabel{
+						width:70px !important;
+					}
+					.formColumnLeft #repeat{
+						color: #333333;
+						float: left;
+						height: 40px;
+						margin-top: 10px;
+						width: 290px;
+					}
+						.formColumnLeft #repeat select{
+							margin-bottom: 10px;
+							margin-left: 35px;
+							margin-top: 13px;
+						}
+					
+						.submitActivities{
+							width:108px;
+							height:33px;
+							border:0px;
+							float:right;
+							background:url(images/toevoegen.png) no-repeat;
+							cursor:pointer;
+						}
+	
+						#addActivity .formColumnRight,
+						#editActivity .formColumnRight{
+							width:400px;
+						}
+						
+						form#addActivity .timeInput, #quickadd .timeInput,
+						form#editActivity .timeInput, #quickadd .timeInput{
+							width:35px !important;
+						}
+						form#addActivity .pictogramSelection,
+						form#editActivity .pictogramSelection{
+							float:left;
+							width:60px; 
+							height:60px;
+							margin:10px;
+							font-size:11px;
+							color:#000;
+						}
+						
+						form#addActivity .defaultPictogram,
+						form#editActivity .defaultPictogram{
+							width:50px;
+							height:50px;
+							float:left;
+							margin:5px;
+							cursor:pointer;
+							
+						}
+						form#addActivity .customPictogram,
+						form#editActivity .customPictogram{
+							width:50px;
+							height:50px;
+							float:left;
+							margin:5px;
+							cursor:pointer;
+						}
+						form#addActivity .defaultPictoRadio,
+						form#editActivity .defaultPictoRadio{
+							display:none;
+							 float: left;
+							 line-height: 18px;
+							margin-left: 18px;
+						}
+						form#addActivity #repeatBlock, form#addActivity #ownPicto,
+						form#editActivity #repeatBlock, form#editActivity #ownPicto{
+							display:none;
+						}
+						form#addActivity .time_indicator, #quickadd .time_indicator,
+						form#editActivity .time_indicator, #quickadd .time_indicator{
+							float:left;
+							margin:13px 0px 0px 4px;
+						}

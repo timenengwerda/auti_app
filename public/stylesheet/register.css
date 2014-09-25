@@ -1,0 +1,175 @@
+
+/********************* REGISTRATIE **************/
+.colourblock{
+	border:1px solid #000; 
+	width:20px; 
+	height:20px;
+}
+.setupBlock{
+	width:720px;
+	background:#FFF;
+	box-shadow: 3px 4px 4px #888;
+	
+	margin:0 auto;
+	border-radius: 5px;
+	margin-bottom:20px;
+}
+	.setupBlock .top{
+		width:720px;
+		height:50px;
+	}
+		.setupBlock .top h1, .setupBlock .top h2{
+			font-family: tahoma, arial;
+			font-size:26px;
+			color:#0088cc;
+			float:left;
+			height:60px;
+			line-height:60px;
+			margin-left:10px;
+		}
+			.setupBlock .top h2{
+				font-size:20px !important;
+				color:#666 !important;
+				line-height:62px !important;
+				margin-left:5px;
+			}
+		
+		.setupBlock .top .progress{
+			float:right;
+			height:60px;
+			width:300px;
+			position:relative;
+		}
+			.top .progress img{
+				position:absolute;
+				top:18px;
+				left:70px;
+			}
+			
+		.stepsMenu{
+			height:72px;
+			width:720px;
+			float:left;
+		}
+			.stepsMenu ul li{
+				width:180px;
+				
+				background: url(images/setupMenuBG.png) 0 0px repeat-x;
+				float:left;
+
+			}
+				.stepsMenu ul li{
+					display:block;
+					height:59px;
+					width:179px;
+					text-align:center;
+					color:#333;
+					font-size:15px;
+					text-decoration:none;
+					font-weight:bold;
+					line-height:20px;
+					padding-top:13px;
+					border-right:1px solid #888;
+		
+					
+				}
+					.stepsMenu ul li:last-child{
+						border:0px;
+						width:180px;
+						list-style-type: none;
+					}
+				
+				.stepsMenu ul li.active{
+					background: url(images/setupMenuBG.png) 0 -72px repeat-x;
+					color:#FFF;
+					list-style-type: none;
+				}
+
+		.setupBlock .content{
+			width:720px;
+			
+			padding:20px;
+			overflow:hidden;
+			position:relative;
+		}
+			.setupBlock .content form{
+				width:450px;
+			}
+				.setupBlock .content h3{
+					color:#333;
+					font-size:16px;
+					font-weight:bold;
+					font-family:tahoma, arial;
+					margin-top:15px;
+					margin-bottom:5px;
+				}
+				.setupBlock .content p{
+					margin:10px 0px;
+					width:695px;
+				}
+
+				.setupBlock .content form p{
+					width:700px;
+					float:left;
+					margin:0px;
+					line-height:40px;
+				}
+					.setupBlock .content form p label{
+						float:left;
+						width:200px;
+						font-size:15px;
+						text-align:right;
+						color:#333;
+						font-weight:bold;
+						display:block;
+						height:27px;
+						margin-top:10px;
+					
+						margin-right:10px;
+					}
+					.setupBlock .content form p input.textField, .setupBlock .content form p input[type=password]{
+						width:177px;
+						margin-left:5px;
+						padding:5px;
+						height:30px;
+						font-size:13px;
+						float:left;
+						border-radius:5px;
+						border:1px solid #a3a3a3;
+						color:#333;
+						margin-top:10px;
+						margin-right:10px;
+					}
+					.setupBlock .content form p input.mailRegister{
+						width:200px;
+					}					
+					
+					.stepButton{
+						margin-right:15px;
+					}
+						
+			.setupBlock .content table td{
+				padding:5px 4px;
+			}
+			.setupBlock .content table td strong{
+				font-size:14px;
+				font-weight:bold;
+			}
+			
+				.activationComplete{
+					font-size:16px;
+					font-weight:bold;
+				}
+				.apiKey{
+					font-size:85px;
+					text-align:center;
+					width:700px;
+					font-family:tahoma, arial;
+					letter-spacing:10px;
+				
+				}
+				
+				.iphone_code_image{			
+					
+					margin-left:258px;
+				}

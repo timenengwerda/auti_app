@@ -1,0 +1,76 @@
+/***********************SETTINGS************************/
+
+#settingsForm{
+	width:500px;
+}
+
+	#settingsForm p{
+		width:500px;
+		float:left;
+	}
+	#settingsForm label{
+		display:block;
+		width:100px;
+		height:20px;
+		float:left;
+	}
+	
+	#settingsForm input, #settingsForm span{
+		float:left;
+	}
+	
+	.user a, .data a{
+		color:#09C !important;
+	}
+	/***********************SETTINGS************************/
+
+#settingsForm{
+	width:500px;
+}
+
+	#settingsForm p{
+		width:500px;
+		float:left;
+	}
+	#settingsForm label{
+		display:block;
+		width:130px;
+		height:20px;
+		float:left;
+	}
+	
+	#settingsForm input, #settingsForm span{
+		float:left;
+	}
+	
+	.user a, .data a{
+		color:#09C !important;
+	}
+	
+	.columnFull{
+		background:white;
+		border-radius: 5px;
+		width: 960px;
+		overflow: hidden;
+		box-shadow: 3px 4px 4px 
+		#888;
+		padding-bottom:15px;
+		float:left;
+	}
+.columnFull .title{
+	width:960px;
+	border-bottom:1px black solid;
+	padding-bottom:10px;
+	float:left;
+	margin-bottom:10px;
+	display:table;
+}
+.columnFull .title h1{
+font-family: tahoma, arial;
+font-size:26px;
+color:#0088cc;
+float:left;
+height:50px;
+line-height:50px;
+margin-left:10px;	
+}
